@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://startbootstrap.com/templates/agency/font-awesome-4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar">
+    <li><a href="#" class="w3-padding-large">Secure Development</a></li>
+    <li class="w3-hide-small w3-right">
+      <a href="#contact" class="w3-padding-large">Contact Us</a>
+    </li>
+    <li class="w3-hide-small w3-right">
+      <a href="#portfolio" class="w3-padding-large">Portfolio</a>
+    </li>
+    <li class="w3-hide-small w3-right">
+      <a href="#about" class="w3-padding-large">About</a>
+    </li>
+  </ul>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-opacity w3-display-container">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <h1 class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">Secure <span class="w3-hide-small">Development</span></h1>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h2 class="w3-center">ABOUT US</h2>
+  <p class="w3-center"><em>We love to design</em></p>
+  <p>We believe that having a professional website is key in today's market. With the world evolving by the second, it is ever more necessary to show the World what you are about. Here at Secure Development, we specialize in clean professional page design. With top of the line webpage security, customer analytics and clean code focused on performance, we would love to represent your business! </p>
+  <!--  Profile Picture and Description  -->
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-section">
+      <img src="img/securedevimg.jpg" id="profile" class="w3-circle" width="70%" alt="Photo of Me">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-section">
+      <p>- Secure Development Staff</p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container" id="portfolio">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-blue w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h2 class="w3-center">Our Website Layouts</h2>
+  <p class="w3-center"><em>Here are a few client websites to view as example templates. <br>(click to enlarge)</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="port w3-col m3">
+      <img src="img/notalone1.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="port w3-col m3">
+      <img src="img/notalone2.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="port w3-col m3">
+      <img src="img/notalone3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="port w3-col m3">
+      <img src="img/24000-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="port w3-col m3">
+      <img src="img/24000.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="port w3-col m3">
+      <img src="img/24000-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="port w3-col m3">
+      <img src="img/24000-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="port w3-col m3">
+      <img src="img/24000-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" style="max-width:100%">
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container" id="contact">
+  <div class="w3-display-middle">
+    <h2 class="w3-xxlarge w3-text-blue w3-wide">CONTACT</h2>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">HOW TO REACH US</h3>
+  <p class="w3-center"><em>We would love to hear from you!</em></p>
+
+  <address class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+    </div>
+    <div class="w3-col m8 w3-container w3-section">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Lexington, KY, USA<br>
+        <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: 870 347 6673<br>
+        <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: securedevelopment@gmail.com<br>
+      </div>
+      <p>Set up a meeting or leave us some feedback!</p>
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
+        </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+        </div>
+      </div>
+      <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
+      <a href="mailto:ghezts@gmail.com" class="w3-btn w3-section w3-right">SEND</a>
+    </div>
+  </address>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black cf">
+  <div class="w3-half">
+    <a target="_blank" href="">
+      <i class="fa fa-facebook fa-2x"></i>
+    </a>
+    <a target="_blank" href="">
+      <i class="fa fa-instagram fa-2x"></i>
+    </a>
+    <a target="_blank" href="">
+      <i class="fa fa-youtube fa-2x"></i>
+    </a>
+  </div>
+  <p class="w3-half">Secure Development &copy 2020</p>
+</footer>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
+<script src="js/viewport.js"></script>
+  </body>
+</html>
