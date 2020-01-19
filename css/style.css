@@ -107,12 +107,12 @@ i.fa {
 /* Form */
 div.form{
   position: relative;
-  left:-27%;
+  left:-38%;
 }
 form {
   margin-left:auto;
   margin-right:auto;
-  width: 400px;
+  width: 800px;
   height: 370px;
   padding:30px;
   border: 1px solid rgba(0,0,0,.2);
@@ -132,7 +132,7 @@ form {
 
 textarea{
   background: rgba(255, 255, 255, 0.4)  no-repeat scroll 16px 16px; 
-  width: 276px;
+  width: 700px;
   height: 110px;
   border: 1px solid rgba(255,255,255,.6);
   -moz-border-radius: 4px;
@@ -143,7 +143,7 @@ textarea{
   background-clip: padding-box; 
   display:block;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size:18px;
+  font-size:22px;
   color:#fff;
   padding-left:45px;
   padding-right:20px;
@@ -153,7 +153,7 @@ textarea{
 }
 
 input {
-  width: 276px;
+  width: 700px;
   height: 48px;
   border: 1px solid rgba(255,255,255,.4);
   -moz-border-radius: 4px;
@@ -164,7 +164,7 @@ input {
   background-clip: padding-box; 
   display:block;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size:18px;
+  font-size:24px;
   color:#fff;
   padding-left:20px;
   padding-right:20px;
@@ -173,6 +173,7 @@ input {
 
 input[type=submit] {
   cursor:pointer;
+  padding-bottom: 50px;
 }
 
 input.name {
@@ -220,15 +221,13 @@ input:focus, textarea:focus {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+  margin-right:35px;
   float:right;
-  border: 1px solid #253737;
-  background: #416b68;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6da5a3), to(#416b68));
-  background: -webkit-linear-gradient(top, #6da5a3, #416b68);
-  background: -moz-linear-gradient(top, #6da5a3, #416b68);
-  background: -ms-linear-gradient(top, #6da5a3, #416b68);
-  background: -o-linear-gradient(top, #6da5a3, #416b68);
-  background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
+  border: 1px solid darkblue;
+  background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   padding: 10.5px 21px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -237,19 +236,16 @@ input:focus, textarea:focus {
   -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
   box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
   text-shadow: #333333 0 1px 0;
-  color: #e1e1e1;
+  color: #fff;
 }
 
 .btn:hover {
   border: 1px solid #253737;
   text-shadow: #333333 0 1px 0;
-  background: #416b68;
-  background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
-  background: -webkit-linear-gradient(top, #77b2b0, #416b68);
-  background: -moz-linear-gradient(top, #77b2b0, #416b68);
-  background: -ms-linear-gradient(top, #77b2b0, #416b68);
-  background: -o-linear-gradient(top, #77b2b0, #416b68);
-  background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
+  background: #373B44;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   color: #fff;
 }
 
@@ -272,7 +268,25 @@ input:focus, textarea:focus {
  @media only screen and (max-width: 800px){
   div.form{
     position: relative;
-    left:-15%;
+    left:0;
     
   }
+  form{
+    width:100%;
+  }
+  input {
+    width: 100%;
+    font-size:15pt;
+  }
+  textarea{
+    width: 100%;
+    font-size:15pt;
  }
+ .btn{
+   display:flex;
+   justify-content: center;
+   width:100%;
+   font-size: 20pt;
+   margin-right:0px;
+ }
+}
