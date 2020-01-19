@@ -45,7 +45,9 @@ div.port{
   overflow:hidden;
   margin-bottom: 40px;
 }
-
+p.center{
+  text-align:center;
+}
 /* Turn off parallax scrolling for tablets and mobiles */
 @media only screen and (max-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -87,19 +89,19 @@ i.fa {
   padding-top: .2em;
   padding-left: .5em;
   padding-right: .5em;
-  taransition: color 1s;
+  transition: color 1s;
 }
 
-.fa-fire:hover {
-  color: #4a4;
+.fa-youtube:hover {
+  color: #04a;
 }
 
 .fa-facebook:hover {
   color: #04a;
 }
 
-.fa-codepen:hover {
-  color: #4af;
+.fa-instagram:hover {
+  color: #04a;
 }
 
 #profile { vertical-align: middle; }
