@@ -6,9 +6,17 @@ body, html {
 }
 
 /*Navbar Styles*/
-.w3-navbar { color: #fff; }
-.w3-navbar.w3-animate-top { color: #444; }
-.w3-navbar li a:hover { background-color: rgba(0,0,0,0.2); color: #fff; }
+.w3-navbar { 
+  color: #ddd;
+  background-color:black;
+}
+.w3-navbar.w3-animate-top {
+   color: #444;
+   }
+
+.w3-navbar li a:hover {
+   background-color: rgba(0,0,0,0.2); color: #fff;
+   }
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -92,7 +100,7 @@ i.fa {
   transition: color 1s;
 }
 
-.fa-youtube:hover {
+.fa-github:hover {
   color: #04a;
 }
 
