@@ -299,4 +299,20 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
    font-size: 20pt;
    margin-right:0px;
  }
+ .bgimg-1 {
+  background-image: url('/img/background1mobile.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/img/portfoliomobile.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/img/contactmobile.jpeg");
+  min-height: 400px;
+}
 }
