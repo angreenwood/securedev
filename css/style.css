@@ -312,7 +312,7 @@ background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, F
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("/img/contactmobile.jpeg");
+  background-image: url("/img/contactmobile.jpg");
   min-height: 400px;
 }
 }
